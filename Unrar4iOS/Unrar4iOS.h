@@ -9,13 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Unrar4iOS : NSObject
-{
-	void	 *_rarFile;
-	struct	 RARHeaderDataEx *header;
-	struct	 RAROpenArchiveDataEx *flags;
-	NSString *filename;
-	NSString *password;
-}
 
 @property(nonatomic, retain) NSString* filename;
 @property(nonatomic, retain) NSString* password;
@@ -23,7 +16,7 @@
 -(BOOL) unrarOpenFile:(NSString*) rarFile;
 -(BOOL) unrarOpenFile:(NSString*) rarFile withPassword:(NSString*) aPassword;
 -(NSArray *) unrarListFiles;
--(BOOL) unrarFile:(NSString *)aFile to:(NSString*) path overWrite:(BOOL) overwrite;
+-(BOOL) unrarFileTo:(NSString*)path overWrite:(BOOL)overwrite;
 -(NSData *) extractStream:(NSString *)aFile;
 -(BOOL) unrarCloseFile;
 

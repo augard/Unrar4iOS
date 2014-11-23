@@ -70,7 +70,7 @@ void SubAllocator::StopSubAllocator()
   if ( SubAllocatorSize ) 
   {
     SubAllocatorSize=0;
-    rarfree(HeapStart);
+    free(HeapStart);
   }
 }
 
@@ -87,7 +87,7 @@ bool SubAllocator::StartSubAllocator(int SASize)
   // units: one as reserve for HeapEnd overflow checks and another
   // to provide the space to correctly align UnitsStart.
   uint AllocSize=t/FIXED_UNIT_SIZE*UNIT_SIZE+2*UNIT_SIZE;
-  if ((HeapStart=(byte *)rarmalloc(AllocSize)) == NULL)
+  if ((HeapStart=(byte *)malloc(AllocSize)) == NULL)
   {
     ErrHandler.MemoryError();
     return FALSE;
@@ -116,16 +116,16 @@ void SubAllocator::InitSubAllocator()
 
   // Size2 is (HiUnit-LoUnit) memory area size to allocate as originally
   // supposed by compression algorithm. It is 7/8 of total allocated size.
-  uint Size2=FIXED_UNIT_SIZE*(SubAllocatorSize/8/FIXED_UNIT_SIZE*7);
+  long Size2=FIXED_UNIT_SIZE*(SubAllocatorSize/8/FIXED_UNIT_SIZE*7);
 
   // RealSize2 is the real adjusted size of (HiUnit-LoUnit) memory taking
   // into account that our UNIT_SIZE can be larger than FIXED_UNIT_SIZE.
-  uint RealSize2=Size2/FIXED_UNIT_SIZE*UNIT_SIZE;
+  long RealSize2=Size2/FIXED_UNIT_SIZE*UNIT_SIZE;
 
   // Size1 is the size of memory area from HeapStart to FakeUnitsStart
   // as originally supposed by compression algorithm. This area can contain
   // different data types, both single symbols and structures.
-  uint Size1=SubAllocatorSize-Size2;
+  long Size1=SubAllocatorSize-Size2;
 
   // Real size of this area. We correct it according to UNIT_SIZE vs
   // FIXED_UNIT_SIZE difference. Also we add one more UNIT_SIZE
@@ -133,7 +133,7 @@ void SubAllocator::InitSubAllocator()
   // which would be lost otherwise. We add UNIT_SIZE instead of 
   // this Size1%FIXED_UNIT_SIZE reminder, because it allows to align
   // UnitsStart easily and adding more than reminder is ok for algorithm.
-  uint RealSize1=Size1/FIXED_UNIT_SIZE*UNIT_SIZE+UNIT_SIZE;
+  long RealSize1=Size1/FIXED_UNIT_SIZE*UNIT_SIZE+UNIT_SIZE;
 
   // RealSize1 must be divided by UNIT_SIZE without a reminder, so UnitsStart
   // is aligned to UNIT_SIZE. It is important for those architectures,
