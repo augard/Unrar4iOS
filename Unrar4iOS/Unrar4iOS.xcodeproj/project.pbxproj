@@ -310,6 +310,18 @@
 		65E1865A1A22513600830805 /* version.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 48F210E81288B38C002745F2 /* version.hpp */; };
 		65E1865B1A22513600830805 /* volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F210E91288B38C002745F2 /* volume.cpp */; };
 		65E1865C1A22513600830805 /* volume.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 48F210EA1288B38C002745F2 /* volume.hpp */; };
+		65E186741A225F3000830805 /* coder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186631A225F3000830805 /* coder.hpp */; };
+		65E186751A225F3000830805 /* coder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186631A225F3000830805 /* coder.hpp */; };
+		65E186761A225F3000830805 /* coder.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186631A225F3000830805 /* coder.hpp */; };
+		65E1867D1A225F3000830805 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186661A225F3000830805 /* model.hpp */; };
+		65E1867E1A225F3000830805 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186661A225F3000830805 /* model.hpp */; };
+		65E1867F1A225F3000830805 /* model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186661A225F3000830805 /* model.hpp */; };
+		65E186831A225F3000830805 /* resource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186681A225F3000830805 /* resource.hpp */; };
+		65E186841A225F3000830805 /* resource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186681A225F3000830805 /* resource.hpp */; };
+		65E186851A225F3000830805 /* resource.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E186681A225F3000830805 /* resource.hpp */; };
+		65E186891A225F3000830805 /* suballoc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E1866A1A225F3000830805 /* suballoc.hpp */; };
+		65E1868A1A225F3000830805 /* suballoc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E1866A1A225F3000830805 /* suballoc.hpp */; };
+		65E1868B1A225F3000830805 /* suballoc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E1866A1A225F3000830805 /* suballoc.hpp */; };
 		A6792C9A16974622006F1B41 /* secpassword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6792C9816974622006F1B41 /* secpassword.cpp */; };
 		A6792C9B16974622006F1B41 /* secpassword.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A6792C9916974622006F1B41 /* secpassword.hpp */; };
 /* End PBXBuildFile section */
@@ -423,6 +435,19 @@
 		65E185471A2250DA00830805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65E185481A2250DA00830805 /* UnrarFW4OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnrarFW4OSX.h; sourceTree = "<group>"; };
 		65E186601A2256FA00830805 /* Unrar4iOS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Unrar4iOS.podspec; path = /Users/lukasfoldyna/Documents/Projects/Frameworks/Unrar/Unrar4iOS/Unrar4iOS.podspec; sourceTree = "<absolute>"; };
+		65E186611A225F3000830805 /* arccmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arccmt.cpp; sourceTree = "<group>"; };
+		65E186621A225F3000830805 /* coder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coder.cpp; sourceTree = "<group>"; };
+		65E186631A225F3000830805 /* coder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = coder.hpp; sourceTree = "<group>"; };
+		65E186641A225F3000830805 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		65E186651A225F3000830805 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		65E186661A225F3000830805 /* model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = model.hpp; sourceTree = "<group>"; };
+		65E186671A225F3000830805 /* rarvmtbl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rarvmtbl.cpp; sourceTree = "<group>"; };
+		65E186681A225F3000830805 /* resource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = resource.hpp; sourceTree = "<group>"; };
+		65E186691A225F3000830805 /* suballoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suballoc.cpp; sourceTree = "<group>"; };
+		65E1866A1A225F3000830805 /* suballoc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = suballoc.hpp; sourceTree = "<group>"; };
+		65E1866B1A225F3000830805 /* unpack15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack15.cpp; sourceTree = "<group>"; };
+		65E1866C1A225F3000830805 /* unpack20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack20.cpp; sourceTree = "<group>"; };
+		65E1866D1A225F3000830805 /* uowners.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uowners.cpp; sourceTree = "<group>"; };
 		A6792C9716974622006F1B41 /* acknow.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acknow.txt; sourceTree = "<group>"; };
 		A6792C9816974622006F1B41 /* secpassword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = secpassword.cpp; sourceTree = "<group>"; };
 		A6792C9916974622006F1B41 /* secpassword.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = secpassword.hpp; sourceTree = "<group>"; };
@@ -509,6 +534,19 @@
 		48F2106D1288B38C002745F2 /* unrar */ = {
 			isa = PBXGroup;
 			children = (
+				65E186611A225F3000830805 /* arccmt.cpp */,
+				65E186621A225F3000830805 /* coder.cpp */,
+				65E186631A225F3000830805 /* coder.hpp */,
+				65E186641A225F3000830805 /* log.cpp */,
+				65E186651A225F3000830805 /* model.cpp */,
+				65E186661A225F3000830805 /* model.hpp */,
+				65E186671A225F3000830805 /* rarvmtbl.cpp */,
+				65E186681A225F3000830805 /* resource.hpp */,
+				65E186691A225F3000830805 /* suballoc.cpp */,
+				65E1866A1A225F3000830805 /* suballoc.hpp */,
+				65E1866B1A225F3000830805 /* unpack15.cpp */,
+				65E1866C1A225F3000830805 /* unpack20.cpp */,
+				65E1866D1A225F3000830805 /* uowners.cpp */,
 				A6792C9716974622006F1B41 /* acknow.txt */,
 				48F2106F1288B38C002745F2 /* archive.cpp */,
 				48F210701288B38C002745F2 /* archive.hpp */,
@@ -689,11 +727,14 @@
 				65E185B01A22513500830805 /* rarvm.hpp in Headers */,
 				65E185BE1A22513500830805 /* rs.hpp in Headers */,
 				65E185961A22513500830805 /* loclang.hpp in Headers */,
+				65E1868A1A225F3000830805 /* suballoc.hpp in Headers */,
 				65E185C81A22513500830805 /* smallfn.hpp in Headers */,
 				65E185D01A22513500830805 /* system.hpp in Headers */,
+				65E186841A225F3000830805 /* resource.hpp in Headers */,
 				65E1858D1A22513500830805 /* getbits.hpp in Headers */,
 				65E185B51A22513500830805 /* rdwrfn.hpp in Headers */,
 				65E185951A22513500830805 /* list.hpp in Headers */,
+				65E1867E1A225F3000830805 /* model.hpp in Headers */,
 				65E185731A22513500830805 /* crc.hpp in Headers */,
 				65E185DF1A22513500830805 /* volume.hpp in Headers */,
 				65E185831A22513500830805 /* filcreat.hpp in Headers */,
@@ -702,6 +743,7 @@
 				65E185891A22513500830805 /* filestr.hpp in Headers */,
 				65E185B81A22513500830805 /* recvol.hpp in Headers */,
 				65E185CC1A22513500830805 /* strlist.hpp in Headers */,
+				65E186751A225F3000830805 /* coder.hpp in Headers */,
 				65E185A91A22513500830805 /* rar.hpp in Headers */,
 				65E1856F1A22513500830805 /* compress.hpp in Headers */,
 				65E185811A22513500830805 /* extract.hpp in Headers */,
@@ -752,11 +794,14 @@
 				65E1862D1A22513600830805 /* rarvm.hpp in Headers */,
 				65E1863B1A22513600830805 /* rs.hpp in Headers */,
 				65E186131A22513600830805 /* loclang.hpp in Headers */,
+				65E1868B1A225F3000830805 /* suballoc.hpp in Headers */,
 				65E186451A22513600830805 /* smallfn.hpp in Headers */,
 				65E1864D1A22513600830805 /* system.hpp in Headers */,
+				65E186851A225F3000830805 /* resource.hpp in Headers */,
 				65E1860A1A22513600830805 /* getbits.hpp in Headers */,
 				65E186321A22513600830805 /* rdwrfn.hpp in Headers */,
 				65E186121A22513600830805 /* list.hpp in Headers */,
+				65E1867F1A225F3000830805 /* model.hpp in Headers */,
 				65E185F01A22513600830805 /* crc.hpp in Headers */,
 				65E1865C1A22513600830805 /* volume.hpp in Headers */,
 				65E186001A22513600830805 /* filcreat.hpp in Headers */,
@@ -765,6 +810,7 @@
 				65E186061A22513600830805 /* filestr.hpp in Headers */,
 				65E186351A22513600830805 /* recvol.hpp in Headers */,
 				65E186491A22513600830805 /* strlist.hpp in Headers */,
+				65E186761A225F3000830805 /* coder.hpp in Headers */,
 				65E186261A22513600830805 /* rar.hpp in Headers */,
 				65E185EC1A22513600830805 /* compress.hpp in Headers */,
 				65E185FE1A22513600830805 /* extract.hpp in Headers */,
@@ -788,6 +834,7 @@
 				48F210FB1288B38C002745F2 /* crc.hpp in Headers */,
 				48F210FD1288B38C002745F2 /* crypt.hpp in Headers */,
 				48F210FF1288B38C002745F2 /* dll.hpp in Headers */,
+				65E186831A225F3000830805 /* resource.hpp in Headers */,
 				48F211011288B38C002745F2 /* encname.hpp in Headers */,
 				48F211031288B38C002745F2 /* errhnd.hpp in Headers */,
 				48F211051288B38C002745F2 /* extinfo.hpp in Headers */,
@@ -799,6 +846,7 @@
 				48F211111288B38C002745F2 /* find.hpp in Headers */,
 				48F211131288B38C002745F2 /* getbits.hpp in Headers */,
 				48F211151288B38C002745F2 /* global.hpp in Headers */,
+				65E186891A225F3000830805 /* suballoc.hpp in Headers */,
 				48F211161288B38C002745F2 /* headers.hpp in Headers */,
 				48F211181288B38C002745F2 /* isnt.hpp in Headers */,
 				48F2111A1288B38C002745F2 /* list.hpp in Headers */,
@@ -816,10 +864,12 @@
 				48F211301288B38C002745F2 /* rarvm.hpp in Headers */,
 				48F211331288B38C002745F2 /* rawread.hpp in Headers */,
 				48F211351288B38C002745F2 /* rdwrfn.hpp in Headers */,
+				65E186741A225F3000830805 /* coder.hpp in Headers */,
 				48F211371288B38C002745F2 /* recvol.hpp in Headers */,
 				48F2113B1288B38C002745F2 /* rijndael.hpp in Headers */,
 				48F2113D1288B38C002745F2 /* rs.hpp in Headers */,
 				48F2113F1288B38C002745F2 /* savepos.hpp in Headers */,
+				65E1867D1A225F3000830805 /* model.hpp in Headers */,
 				48F211411288B38C002745F2 /* scantree.hpp in Headers */,
 				48F211431288B38C002745F2 /* sha1.hpp in Headers */,
 				48F211451288B38C002745F2 /* smallfn.hpp in Headers */,
