@@ -5,6 +5,8 @@
  *  Contents: model description and encoding/decoding routines              *
  ****************************************************************************/
 
+#include "rar.hpp"
+
 inline PPM_CONTEXT* PPM_CONTEXT::createChild(ModelPPM *Model,STATE* pStats,
                                              STATE& FirstState)
 {

@@ -1,4 +1,5 @@
 
+#include "rar.hpp"
 
 inline unsigned int RangeCoder::GetChar()
 {
@@ -14,18 +15,6 @@ void RangeCoder::InitDecoder(Unpack *UnpackRead)
   range=uint(-1);
   for (int i=0;i < 4;i++)
     code=(code << 8) | GetChar();
-}
-
-
-// (int) cast before "low" added only to suppress compiler warnings.
-#define ARI_DEC_NORMALIZE(code,low,range,read)                           \
-{                                                                        \
-  while ((low^(low+range))<TOP || range<BOT && ((range=-(int)low&(BOT-1)),1)) \
-  {                                                                      \
-    code=(code << 8) | read->GetChar();                                  \
-    range <<= 8;                                                         \
-    low <<= 8;                                                           \
-  }                                                                      \
 }
 
 

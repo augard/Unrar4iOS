@@ -5,6 +5,8 @@
  *  Contents: memory allocation routines                                    *
  ****************************************************************************/
 
+#include "rar.hpp"
+
 SubAllocator::SubAllocator()
 {
   Clean();

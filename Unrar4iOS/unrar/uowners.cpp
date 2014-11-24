@@ -1,4 +1,5 @@
 
+#include "rar.hpp"
 
 void ExtractUnixOwner(Archive &Arc,char *FileName)
 {

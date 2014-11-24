@@ -4,8 +4,6 @@
 #include "log.cpp"
 #endif
 
-static int KbdAnsi(char *Addr,int Size);
-
 #if !defined(GUI) && !defined(SILENT)
 static void RawPrint(char *Msg,MESSAGE_TYPE MessageType);
 static byte GetKey();
@@ -279,41 +277,7 @@ int Ask(const char *AskStr)
 #endif
 
 
-int KbdAnsi(char *Addr,size_t Size)
-{
-  int RetCode=0;
-#ifndef GUI
-  for (size_t I=0;I<Size;I++)
-    if (Addr[I]==27 && Addr[I+1]=='[')
-    {
-      for (size_t J=I+2;J<Size;J++)
-      {
-        if (Addr[J]=='\"')
-          return(2);
-        if (!IsDigit(Addr[J]) && Addr[J]!=';')
-          break;
-      }
-      RetCode=1;
-    }
-#endif
-  return(RetCode);
-}
-
-
 void OutComment(char *Comment,size_t Size)
 {
-#ifndef GUI
-  if (KbdAnsi(Comment,Size)==2)
-    return;
-  const size_t MaxOutSize=0x400;
-  for (size_t I=0;I<Size;I+=MaxOutSize)
-  {
-    char Msg[MaxOutSize+1];
-    size_t CopySize=Min(MaxOutSize,Size-I);
-    strncpy(Msg,Comment+I,CopySize);
-    Msg[CopySize]=0;
-    mprintf("%s",Msg);
-  }
-  mprintf("\n");
-#endif
+
 }
