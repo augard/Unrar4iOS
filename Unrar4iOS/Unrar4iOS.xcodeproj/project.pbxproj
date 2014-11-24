@@ -322,6 +322,9 @@
 		65E186891A225F3000830805 /* suballoc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E1866A1A225F3000830805 /* suballoc.hpp */; };
 		65E1868A1A225F3000830805 /* suballoc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E1866A1A225F3000830805 /* suballoc.hpp */; };
 		65E1868B1A225F3000830805 /* suballoc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65E1866A1A225F3000830805 /* suballoc.hpp */; };
+		65E1869B1A233FE900830805 /* arccmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65E1869A1A233FE900830805 /* arccmt.cpp */; };
+		65E1869C1A233FE900830805 /* arccmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65E1869A1A233FE900830805 /* arccmt.cpp */; };
+		65E1869D1A233FE900830805 /* arccmt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65E1869A1A233FE900830805 /* arccmt.cpp */; };
 		A6792C9A16974622006F1B41 /* secpassword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6792C9816974622006F1B41 /* secpassword.cpp */; };
 		A6792C9B16974622006F1B41 /* secpassword.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A6792C9916974622006F1B41 /* secpassword.hpp */; };
 /* End PBXBuildFile section */
@@ -435,7 +438,6 @@
 		65E185471A2250DA00830805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65E185481A2250DA00830805 /* UnrarFW4OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnrarFW4OSX.h; sourceTree = "<group>"; };
 		65E186601A2256FA00830805 /* Unrar4iOS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Unrar4iOS.podspec; path = /Users/lukasfoldyna/Documents/Projects/Frameworks/Unrar/Unrar4iOS/Unrar4iOS.podspec; sourceTree = "<absolute>"; };
-		65E186611A225F3000830805 /* arccmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arccmt.cpp; sourceTree = "<group>"; };
 		65E186621A225F3000830805 /* coder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coder.cpp; sourceTree = "<group>"; };
 		65E186631A225F3000830805 /* coder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = coder.hpp; sourceTree = "<group>"; };
 		65E186641A225F3000830805 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 		65E1866B1A225F3000830805 /* unpack15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack15.cpp; sourceTree = "<group>"; };
 		65E1866C1A225F3000830805 /* unpack20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack20.cpp; sourceTree = "<group>"; };
 		65E1866D1A225F3000830805 /* uowners.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uowners.cpp; sourceTree = "<group>"; };
+		65E1869A1A233FE900830805 /* arccmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arccmt.cpp; sourceTree = "<group>"; };
 		A6792C9716974622006F1B41 /* acknow.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acknow.txt; sourceTree = "<group>"; };
 		A6792C9816974622006F1B41 /* secpassword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = secpassword.cpp; sourceTree = "<group>"; };
 		A6792C9916974622006F1B41 /* secpassword.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = secpassword.hpp; sourceTree = "<group>"; };
@@ -534,7 +537,7 @@
 		48F2106D1288B38C002745F2 /* unrar */ = {
 			isa = PBXGroup;
 			children = (
-				65E186611A225F3000830805 /* arccmt.cpp */,
+				65E1869A1A233FE900830805 /* arccmt.cpp */,
 				65E186621A225F3000830805 /* coder.cpp */,
 				65E186631A225F3000830805 /* coder.hpp */,
 				65E186641A225F3000830805 /* log.cpp */,
@@ -1007,6 +1010,7 @@
 				65E1859D1A22513500830805 /* match.cpp in Sources */,
 				65E185A61A22513500830805 /* pathfn.cpp in Sources */,
 				65E185A21A22513500830805 /* options.cpp in Sources */,
+				65E1869C1A233FE900830805 /* arccmt.cpp in Sources */,
 				65E185761A22513500830805 /* dll.cpp in Sources */,
 				65E185741A22513500830805 /* crypt.cpp in Sources */,
 				65E185681A22513500830805 /* arcread.cpp in Sources */,
@@ -1060,6 +1064,7 @@
 				65E1861A1A22513600830805 /* match.cpp in Sources */,
 				65E186231A22513600830805 /* pathfn.cpp in Sources */,
 				65E1861F1A22513600830805 /* options.cpp in Sources */,
+				65E1869D1A233FE900830805 /* arccmt.cpp in Sources */,
 				65E185F31A22513600830805 /* dll.cpp in Sources */,
 				65E185F11A22513600830805 /* crypt.cpp in Sources */,
 				65E185E51A22513600830805 /* arcread.cpp in Sources */,
@@ -1113,6 +1118,7 @@
 				480F5FC7128A06A600A9B478 /* volume.cpp in Sources */,
 				48F210EE1288B38C002745F2 /* archive.cpp in Sources */,
 				48F210F01288B38C002745F2 /* arcread.cpp in Sources */,
+				65E1869B1A233FE900830805 /* arccmt.cpp in Sources */,
 				48F210F31288B38C002745F2 /* cmddata.cpp in Sources */,
 				48F210F81288B38C002745F2 /* consio.cpp in Sources */,
 				48F210FA1288B38C002745F2 /* crc.cpp in Sources */,
