@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name     = 'Unrar4iOS'
-s.version  = '0.5'
+s.version  = '0.6'
 s.license  = 'BSD & RAR'
 s.summary  = 'Port of Unrar library to iOS and OS X platform'
 s.homepage = 'https://github.com/augard/Unrar4iOS'
